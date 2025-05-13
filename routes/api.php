@@ -16,7 +16,7 @@ Route::middleware('jwt')->group(function () {
     Route::get('/user', [AuthController::class, 'user']);
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::put('/user', [AuthController::class, 'updateUser']);
-
+    // Route::apiResource('posts', 'App\Http\Controllers\Api\PostController');
     // Route::prefix('a_products')->group(function () {
     //     Route::get('/', [ProductController::class, 'index']);
     //     Route::post('save', [ProductController::class, 'save']);
