@@ -3,10 +3,15 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\NewebPayController;
+use Ycs77\NewebPay\Facades\NewebPay;
 
 
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
+
+Route::get('pay', [NewebPayController::class, 'getOrder']);
+Route::post('/pay/notify', [NewebPayController::class, 'notify']);
 
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
@@ -24,4 +29,7 @@ Route::middleware('jwt')->group(function () {
     //     Route::patch('{id}/update', [ProductController::class, 'update']);
     //     Route::delete('{id}/delete', [ProductController::class, 'delete']);
     // });
+
+    // Route::post('/pay', [PayController::class, 'pay']);
 });
+

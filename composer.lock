@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7445d8ffd6328821bee23eeadf0e853",
+    "content-hash": "d78f24e9cd75a4e375424b87226a8316",
     "packages": [
         {
             "name": "brick/math",
@@ -6071,6 +6071,146 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "ycs77/laravel-newebpay",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ycs77/laravel-newebpay.git",
+                "reference": "9746d07b17aeb54c2d2254119fe16a04672fb10a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ycs77/laravel-newebpay/zipball/9746d07b17aeb54c2d2254119fe16a04672fb10a",
+                "reference": "9746d07b17aeb54c2d2254119fe16a04672fb10a",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": ">=7.2",
+                "illuminate/config": ">=9.0",
+                "illuminate/contracts": ">=9.0",
+                "illuminate/log": ">=9.0",
+                "illuminate/support": ">=9.0",
+                "php": ">=8.1",
+                "ycs77/laravel-recover-session": "^1.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": ">=7.0",
+                "pestphp/pest": "^1.23 || ^2.6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "NewebPay": "Ycs77\\NewebPay\\Facades\\NewebPay"
+                    },
+                    "providers": [
+                        "Ycs77\\NewebPay\\NewebPayServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ycs77\\NewebPay\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "w4ll4se",
+                    "email": "wallase.huang@gmail.com"
+                },
+                {
+                    "name": "Lucas Yang",
+                    "email": "yangchenshin77@gmail.com"
+                }
+            ],
+            "description": "A library of connecting newebpay's API service.",
+            "homepage": "https://github.com/ycs77/laravel-newebpay",
+            "support": {
+                "source": "https://github.com/ycs77/laravel-newebpay/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ycs77",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2024-12-12T12:32:01+00:00"
+        },
+        {
+            "name": "ycs77/laravel-recover-session",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ycs77/laravel-recover-session.git",
+                "reference": "3b3481cfa37e4191cdb9a8066d8a1e31e4c5cd68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ycs77/laravel-recover-session/zipball/3b3481cfa37e4191cdb9a8066d8a1e31e4c5cd68",
+                "reference": "3b3481cfa37e4191cdb9a8066d8a1e31e4c5cd68",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": ">=9.0",
+                "illuminate/config": ">=9.0",
+                "illuminate/contracts": ">=9.0",
+                "illuminate/encryption": ">=9.0",
+                "illuminate/http": ">=9.0",
+                "illuminate/session": ">=9.0",
+                "illuminate/support": ">=9.0",
+                "php": ">=8.1",
+                "symfony/http-foundation": ">=6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": ">=7.0",
+                "pestphp/pest": "^2.6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "RecoverSession": "Ycs77\\LaravelRecoverSession\\Facades\\RecoverSession"
+                    },
+                    "providers": [
+                        "Ycs77\\LaravelRecoverSession\\RecoverSessionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ycs77\\LaravelRecoverSession\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lucas Yang",
+                    "email": "yangchenshin77@gmail.com"
+                }
+            ],
+            "description": "Recover Laravel session when form post back from third-party API.",
+            "homepage": "https://github.com/ycs77/laravel-recover-session",
+            "support": {
+                "source": "https://github.com/ycs77/laravel-recover-session/tree/v1.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ycs77",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2023-06-20T09:48:47+00:00"
         }
     ],
     "packages-dev": [
