@@ -13,8 +13,11 @@ jobs:
 
       - name: Deploy
         run: |
+          rsync -av --delete ./ /var/www/html/app_laravel \
+            --exclude=.git \
+            --exclude=storage \
+            --exclude=.env
           cd /var/www/html/app_laravel
-          git pull origin main
           composer install --no-dev --optimize-autoloader
           php artisan route:cache
           php artisan config:cache
